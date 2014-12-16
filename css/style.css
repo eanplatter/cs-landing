@@ -789,28 +789,32 @@ footer .footer-below {
 }
 
 .fssDetail{
-    display: none;
+    opacity: 0;
     font-size: 18px;
     line-height: normal;
     text-align: left;
     padding: 10px;
-
+    -webkit-transition: color 1s;
+    transition-delay: 3s;
+    color: red;
 }
 
 .iconBlue {
     border: solid 5px #418bc5;
      color: #418bc5;
+     transition: 0.5s;
 }
 
 .iconYellow {
     border: solid 5px #f1c40f;
      color: #f1c40f;
+     transition: 0.5s;
 }
 .iconGreen {
     border: solid 5px #2ecc71;
      color:#2ecc71;
+     transition: 0.5s;
 }
-
 
 .icon1 h5{
     font-family: "Roboto", "Helvetica Neue", Helvetica,Arial,sans-serif;
@@ -821,8 +825,6 @@ footer .footer-below {
     padding-top: 40%;
 }
 
-
-
 .iconBlue:hover {
   box-shadow: 0px 0px 0px  4px #fff;
   -webkit-transform: scale(1.2);
@@ -831,16 +833,16 @@ footer .footer-below {
   color: white;
   border-radius: 0px;
   width: 100%;
-  height: auto;
+  height: 405px;
   border-color: none;
-
+  transition: 0.5s;
 }
 
 .iconBlue:hover h5{
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     padding-top: 5px;
-
+    color: white;
 }
 
 .iconYellow:hover {
@@ -851,7 +853,9 @@ footer .footer-below {
   color: white;
   border-radius: 0px;
   width: 100%;
-  height: auto;
+  height: 320px;
+  transition: 0.5s;
+
 }
 
 
@@ -859,6 +863,7 @@ footer .footer-below {
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
     padding-top: 5px;
+    color: white;
 
 }
 
@@ -870,7 +875,9 @@ footer .footer-below {
   color: white;
   border-radius: 0px;
   width: 100%;
-  height: auto;
+  height: 380px;
+  transition: 0.5s;
+
 
 }
 
@@ -878,18 +885,28 @@ footer .footer-below {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     padding-top: 5px;
+    color: white;
+
 
 }
 .iconBlue:hover .fssDetail {
     display: block;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition-delay: 0.29s;
 }
 
+
 .iconYellow:hover .fssDetail {
-    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition-delay: 0.369s;
 }
 
 .iconGreen:hover .fssDetail {
-    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition-delay: 0.29s;
 }
 
 
